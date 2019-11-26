@@ -12,7 +12,7 @@ class Baza {
 			$this->db = new PDO("sqlite:$dbfile");
 			$this->db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 		} catch(PDOException $e) {
-			$this->kom[] = 'Błąd:' $e->getMessage(). "<br>";
+			$this->kom[] = 'Błąd:' .$e->getMessage(). "<br>";
 		}
 		$this->init_tables();}
 
@@ -20,39 +20,36 @@ class Baza {
 	if(file_exists('baza/baza.sql')){
 		$q = "SELECT name FROM sqlite_master WHERE type='table' AND name='menu'";
 		$this->db_query($q);
-	if (empty($this->ret)) {
-		$sql = file_get_contents('baza/baza.sql');
-		$this->db->exec($sql);
-		$this->kom[] = "Utworzono tabele!";
-}
-}
+		if (empty($this->ret)) {
+			$sql = file_get_contents('baza/baza.sql');
+			$this->db->exec($sql);
+			$this->kom[] = "Utworzono tabele!";
+		}
+	}
 }
 
 
 function db_query($q) {
 	try {
 		$this->ret = $this->db->query($q, $this->mode)->fetchAll();
+		$this->kom[] = "Wykonano: $q\n";
 	} catch(PDOException $e) {
-		$this->kom[] = 'Błąd:' $e->getMessage(). "<br>";
+		$this->kom[] = 'Błąd:' .$e->getMessage(). "<br>";
 	}
 }
 
 function db_exec($q) {
 	try {
 		$this->db->exec($q);
-		$this->kom[] = "Wykonano:$q\n";
+		$this->kom[] = "Wykonano: $q\n";
 	} catch(PDOException $e) {
-		$this->kom[] = 'Błąd:' $e->getMessage(). "<br>";
+		$this->kom[] = 'Błąd:' .$e->getMessage(). "<br>";
 	}
 }
 
 
 }
 
-function init_baza() {
-	global $db, $dbfile, $kom;
-
-}
 
 
 
