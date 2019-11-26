@@ -4,46 +4,57 @@ class Baza {
 	private $db = null;
 	var $ret = array();
 	var $mode = PDO::FETCH_ASSOC;
+	var $kom = array();
+	function __construct($dbfile){
+		if(!file_exists($dbfile))
+		$this->kom[] = 'Brak pliku. Tworzę nowy.';
+		try {
+			$this->db = new PDO("sqlite:$dbfile");
+			$this->db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+		} catch(PDOException $e) {
+			$this->kom[] = 'Błąd:' $e->getMessage(). "<br>";
+		}
+		$this->init_tables();}
+
+	function init_tables(){
+	if(file_exists('baza/baza.sql')){
+		$q = "SELECT name FROM sqlite_master WHERE type='table' AND name='menu'";
+		$this->db_query($q);
+	if (empty($this->ret)) {
+		$sql = file_get_contents('baza/baza.sql');
+		$this->db->exec($sql);
+		$this->kom[] = "Utworzono tabele!";
+}
+}
+}
+
+
+function db_query($q) {
+	try {
+		$this->ret = $this->db->query($q, $this->mode)->fetchAll();
+	} catch(PDOException $e) {
+		$this->kom[] = 'Błąd:' $e->getMessage(). "<br>";
+	}
+}
+
+function db_exec($q) {
+	try {
+		$this->db->exec($q);
+		$this->kom[] = "Wykonano:$q\n";
+	} catch(PDOException $e) {
+		$this->kom[] = 'Błąd:' $e->getMessage(). "<br>";
+	}
+}
+
+
 }
 
 function init_baza() {
 	global $db, $dbfile, $kom;
-	if(!file_exists($dbfile))
-		$kom[] = 'Brak pliku. Tworzę nowy.';
 
-	$db = new PDO("sqlite:$dbfile");
-	$db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 }
 
-function init_tables(){
-	global $db $kom;
-	if(file_exists('baza/baza.sql')){
-		$q = "SELECT name FROM sqlite_master WHERE type='table' AND name='menu'";
-		$ret = array();
-		db_query($q, $ret);
-		if (empty($ret)) {
-			$sql = file_get_contents('baza/baza.sql');
-			$db->exec($sql);
-			$kom[] = "Utworzono tabele!";
-		}
-	}
-}
 
-function db_query($q, &$ret) {
-	global $db;
-	$r = null;
-	try {
-		$r = $db->query($q);
-	}
-	catch(PDOException $e) {
-		echo ($e->getMessage());
-	}
-	if ($r) {
-		$ret = $r->fetchAll();
-		return true;
-	}
-	return false;
-}
 
 
 ?>
