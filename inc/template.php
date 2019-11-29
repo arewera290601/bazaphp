@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Formularz w Bootstrapie">
-    <title>Formularz</title>
+    <title>Aplikacja PHP</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
@@ -20,7 +20,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="http://lo1.sandomierz.pl/plany/ostatni/index.html">Plan lekcji</a>
                 </li>
-                <?php get_menu($db, $id, $strona)?>
+                <?php get_menu($db, $id, $strona); ?>
             </ul>
         </div>
     </nav>
@@ -28,10 +28,11 @@
     <div class="container">
     	<div class="row">
     	   <div class="col">
+            <h1><?php get_page_title($strona); ?></h1>
 <?php
-    get_kom($db->kom);
+    get_kom(Baza::$kom);
     get_kom($kom);
-
+    get_page_content($strona);
 ?>
             </div>
     	</div>

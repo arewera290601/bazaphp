@@ -1,0 +1,56 @@
+[29-Nov-2019 07:42:17 Europe/Warsaw] PHP Parse error:  syntax error, unexpected '=' in /home/kl3ag2/public_html/bazaphp/inc/db.php on line 13
+[29-Nov-2019 07:44:54 Europe/Warsaw] PHP Parse error:  syntax error, unexpected '->' (T_OBJECT_OPERATOR) in /home/kl3ag2/public_html/bazaphp/inc/db.php on line 35
+[29-Nov-2019 07:45:14 Europe/Warsaw] PHP Fatal error:  Constructor Baza::__construct() cannot be static in /home/kl3ag2/public_html/bazaphp/inc/db.php on line 3
+[29-Nov-2019 07:46:00 Europe/Warsaw] PHP Fatal error:  Constructor Baza::__construct() cannot be static in /home/kl3ag2/public_html/bazaphp/inc/db.php on line 3
+[29-Nov-2019 07:46:01 Europe/Warsaw] PHP Fatal error:  Constructor Baza::__construct() cannot be static in /home/kl3ag2/public_html/bazaphp/inc/db.php on line 3
+[29-Nov-2019 07:46:01 Europe/Warsaw] PHP Fatal error:  Constructor Baza::__construct() cannot be static in /home/kl3ag2/public_html/bazaphp/inc/db.php on line 3
+[29-Nov-2019 07:46:01 Europe/Warsaw] PHP Fatal error:  Constructor Baza::__construct() cannot be static in /home/kl3ag2/public_html/bazaphp/inc/db.php on line 3
+[29-Nov-2019 07:46:01 Europe/Warsaw] PHP Fatal error:  Constructor Baza::__construct() cannot be static in /home/kl3ag2/public_html/bazaphp/inc/db.php on line 3
+[29-Nov-2019 07:46:02 Europe/Warsaw] PHP Fatal error:  Constructor Baza::__construct() cannot be static in /home/kl3ag2/public_html/bazaphp/inc/db.php on line 3
+[29-Nov-2019 07:46:02 Europe/Warsaw] PHP Fatal error:  Constructor Baza::__construct() cannot be static in /home/kl3ag2/public_html/bazaphp/inc/db.php on line 3
+[29-Nov-2019 07:46:02 Europe/Warsaw] PHP Fatal error:  Constructor Baza::__construct() cannot be static in /home/kl3ag2/public_html/bazaphp/inc/db.php on line 3
+[29-Nov-2019 07:46:36 Europe/Warsaw] PHP Fatal error:  Constructor Baza::__construct() cannot be static in /home/kl3ag2/public_html/bazaphp/inc/db.php on line 3
+[29-Nov-2019 07:46:36 Europe/Warsaw] PHP Fatal error:  Constructor Baza::__construct() cannot be static in /home/kl3ag2/public_html/bazaphp/inc/db.php on line 3
+[29-Nov-2019 07:46:37 Europe/Warsaw] PHP Fatal error:  Constructor Baza::__construct() cannot be static in /home/kl3ag2/public_html/bazaphp/inc/db.php on line 3
+[29-Nov-2019 07:46:37 Europe/Warsaw] PHP Fatal error:  Constructor Baza::__construct() cannot be static in /home/kl3ag2/public_html/bazaphp/inc/db.php on line 3
+[29-Nov-2019 07:46:37 Europe/Warsaw] PHP Fatal error:  Constructor Baza::__construct() cannot be static in /home/kl3ag2/public_html/bazaphp/inc/db.php on line 3
+[29-Nov-2019 07:48:22 Europe/Warsaw] PHP Notice:  Accessing static property Baza::$kom as non static in /home/kl3ag2/public_html/bazaphp/inc/template.php on line 33
+[29-Nov-2019 07:48:22 Europe/Warsaw] PHP Notice:  Undefined property: Baza::$kom in /home/kl3ag2/public_html/bazaphp/inc/template.php on line 33
+[29-Nov-2019 07:48:22 Europe/Warsaw] PHP Warning:  Invalid argument supplied for foreach() in /home/kl3ag2/public_html/bazaphp/inc/functions.php on line 4
+[29-Nov-2019 07:48:22 Europe/Warsaw] PHP Fatal error:  Uncaught Error: Call to undefined function get_page_content() in /home/kl3ag2/public_html/bazaphp/inc/template.php:35
+Stack trace:
+#0 /home/kl3ag2/public_html/bazaphp/index.php(23): include_once()
+#1 {main}
+  thrown in /home/kl3ag2/public_html/bazaphp/inc/template.php on line 35
+[29-Nov-2019 07:49:25 Europe/Warsaw] PHP Notice:  Array to string conversion in /home/kl3ag2/public_html/bazaphp/inc/template.php on line 33
+[29-Nov-2019 07:49:25 Europe/Warsaw] PHP Notice:  Undefined property: Baza::$Array in /home/kl3ag2/public_html/bazaphp/inc/template.php on line 33
+[29-Nov-2019 07:49:25 Europe/Warsaw] PHP Warning:  Invalid argument supplied for foreach() in /home/kl3ag2/public_html/bazaphp/inc/functions.php on line 4
+[29-Nov-2019 07:49:25 Europe/Warsaw] PHP Fatal error:  Uncaught Error: Call to undefined function get_page_content() in /home/kl3ag2/public_html/bazaphp/inc/template.php:35
+Stack trace:
+#0 /home/kl3ag2/public_html/bazaphp/index.php(23): include_once()
+#1 {main}
+  thrown in /home/kl3ag2/public_html/bazaphp/inc/template.php on line 35
+[29-Nov-2019 07:51:24 Europe/Warsaw] PHP Notice:  Array to string conversion in /home/kl3ag2/public_html/bazaphp/inc/template.php on line 33
+[29-Nov-2019 07:51:24 Europe/Warsaw] PHP Notice:  Undefined property: Baza::$Array in /home/kl3ag2/public_html/bazaphp/inc/template.php on line 33
+[29-Nov-2019 07:51:24 Europe/Warsaw] PHP Warning:  Invalid argument supplied for foreach() in /home/kl3ag2/public_html/bazaphp/inc/functions.php on line 4
+[29-Nov-2019 07:51:24 Europe/Warsaw] PHP Fatal error:  Uncaught Error: Call to undefined function get_page_content() in /home/kl3ag2/public_html/bazaphp/inc/template.php:35
+Stack trace:
+#0 /home/kl3ag2/public_html/bazaphp/index.php(23): include_once()
+#1 {main}
+  thrown in /home/kl3ag2/public_html/bazaphp/inc/template.php on line 35
+[29-Nov-2019 07:51:24 Europe/Warsaw] PHP Notice:  Array to string conversion in /home/kl3ag2/public_html/bazaphp/inc/template.php on line 33
+[29-Nov-2019 07:51:24 Europe/Warsaw] PHP Notice:  Undefined property: Baza::$Array in /home/kl3ag2/public_html/bazaphp/inc/template.php on line 33
+[29-Nov-2019 07:51:24 Europe/Warsaw] PHP Warning:  Invalid argument supplied for foreach() in /home/kl3ag2/public_html/bazaphp/inc/functions.php on line 4
+[29-Nov-2019 07:51:24 Europe/Warsaw] PHP Fatal error:  Uncaught Error: Call to undefined function get_page_content() in /home/kl3ag2/public_html/bazaphp/inc/template.php:35
+Stack trace:
+#0 /home/kl3ag2/public_html/bazaphp/index.php(23): include_once()
+#1 {main}
+  thrown in /home/kl3ag2/public_html/bazaphp/inc/template.php on line 35
+[29-Nov-2019 07:51:25 Europe/Warsaw] PHP Notice:  Array to string conversion in /home/kl3ag2/public_html/bazaphp/inc/template.php on line 33
+[29-Nov-2019 07:51:25 Europe/Warsaw] PHP Notice:  Undefined property: Baza::$Array in /home/kl3ag2/public_html/bazaphp/inc/template.php on line 33
+[29-Nov-2019 07:51:25 Europe/Warsaw] PHP Warning:  Invalid argument supplied for foreach() in /home/kl3ag2/public_html/bazaphp/inc/functions.php on line 4
+[29-Nov-2019 07:51:25 Europe/Warsaw] PHP Fatal error:  Uncaught Error: Call to undefined function get_page_content() in /home/kl3ag2/public_html/bazaphp/inc/template.php:35
+Stack trace:
+#0 /home/kl3ag2/public_html/bazaphp/index.php(23): include_once()
+#1 {main}
+  thrown in /home/kl3ag2/public_html/bazaphp/inc/template.php on line 35
